@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatOS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="desktop">
+        <!-- Desktop Icons -->
+        <div id="iconsContainer"></div>
+
+        <!-- Notepad Window -->
+        <div id="notepad" class="window">
+            <div class="title-bar">
+                Notepad
+                <button class="close-btn">X</button>
+                <button class="fullscreen-btn">🗖</button>
+            </div>
+            <textarea rows="20" cols="50"></textarea>
+            <div class="resize-handle"></div>
+        </div>
+
+        <!-- File Explorer Window -->
+        <div id="fileExplorer" class="window">
+            <div class="title-bar">
+                File Explorer
+                <button class="close-btn">X</button>
+                <button class="fullscreen-btn">🗖</button>
+            </div>
+            <div id="fileExplorerContent">
+                <div class="folder">Documents</div>
+                <div class="folder">Pictures</div>
+                <div class="folder">Downloads</div>
+                <div class="file">file1.txt</div>
+                <div class="file">file2.docx</div>
+                <div class="file">file3.pdf</div>
+            </div>
+            <div class="resize-handle"></div>
+        </div>
+
+        <!-- Media Player Window -->
+        <div id="mediaPlayer" class="window">
+            <div class="title-bar">
+                Media Player
+                <button class="close-btn">X</button>
+                <button class="fullscreen-btn">🗖</button>
+            </div>
+            <p>Media Player content goes here.</p>
+            <div class="resize-handle"></div>
+        </div>
+
+        <!-- ChatSearch Window -->
+        <div id="chatSearch" class="window">
+            <div class="title-bar">
+                ChatSearch
+                <button class="close-btn">X</button>
+                <button class="fullscreen-btn">🗖</button>
+            </div>
+            <input type="text" id="searchInput" placeholder="Search...">
+            <div id="searchResults"></div>
+            <div class="resize-handle"></div>
+        </div>
+    </div>
+
+    <!-- Taskbar -->
+    <div id="taskbar">
+        <button id="openNotepadBtn">Open Notepad</button>
+        <button id="openFileExplorerBtn">Open File Explorer</button>
+        <button id="openMediaPlayerBtn">Open Media Player</button>
+        <button id="openChatSearchBtn">ChatSearch</button>
+        <button id="startMenuBtn">Start Menu</button>
+    </div>
+
+    <!-- Start Menu -->
+    <div id="startMenu">
+        <button id="startMenuNotepad">Add Notepad</button>
+        <button id="startMenuFileExplorer">Add File Explorer</button>
+        <button id="startMenuMediaPlayer">Add Media Player</button>
+    </div>
+
+    <!-- Context Menu -->
+    <div id="contextMenu">
+        <button id="createNotepad">New Notepad</button>
+        <button id="createFileExplorer">New File Explorer</button>
+        <button id="createMediaPlayer">New Media Player</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
